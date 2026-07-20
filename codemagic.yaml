@@ -12,6 +12,6 @@ workflows:
           chmod +x gradlew
       - name: Build Android APK
         script: |
-          ./gradlew assembleDebug --warning-mode all
+          ./gradlew assembleDebug --quiet || ./gradlew assembleDebug --stacktrace | grep -A 10 "Caused by:"
     artifacts:
       - app/build/outputs/**/*.apk
