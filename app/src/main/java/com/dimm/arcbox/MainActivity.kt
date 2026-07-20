@@ -9,6 +9,14 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import com.dimm.arcbox.ui.theme.ArcboxTheme
 import kotlinx.coroutines.launch
+import androidx.compose.material3.ExperimentalMaterial3Api
+import androidx.annotation.OptIn
+
+@OptIn(ExperimentalMaterial3Api::class)
+class MainActivity : ComponentActivity() {
+    // ... restante do seu código
+}
+
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
